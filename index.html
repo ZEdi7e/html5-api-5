@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="container">
+        <section class="data-loader">
+            <h2>Загрузка данных</h2>
+            <button class="load-users">Загрузить пользователей</button>
+            <button class="load-posts">Загрузить посты</button>
+            <div class="output"></div>
+        </section>
+        <section class="chat">
+            <h2>Чат</h2>
+            <input type="text" class="message-input" placeholder="Введите сообщение">
+            <button class="send-button">Отправить</button>
+            <div class="chat-output"></div>
+        </section>   
+        <section class="sse">
+            <h2>Обновления</h2>
+            <div class="sse-output"></div>
+        </section>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
